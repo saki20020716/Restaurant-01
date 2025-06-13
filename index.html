@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Restaurant</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="img/res.png" rel="icon">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Spectral:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+
+    <!-- JS for older browsers -->
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Responsive for Mobile */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .navbar-nav {
+                display: none;
+                width: 100%;
+                background-color: #f8f8f8;
+                padding: 10px 0;
+            }
+
+            .navbar-nav.active {
+                display: block;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .nav-list li {
+                width: 100%;
+            }
+
+            .nav-list li a {
+                display: block;
+                padding: 12px 20px;
+                border-bottom: 1px solid #ddd;
+                color: #333;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Header with Navigation -->
+<div class="header">
+    <div class="container">
+        <div class="nav-header">
+            
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+        </div>
+
+        <nav id="main-nav" class="navbar-nav">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menus</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Optional: Your page content here -->
+
+
+<!-- JavaScript -->
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("main-nav");
+    const links = document.querySelectorAll(".nav-list li a");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+
+    // Close nav when a link is clicked (mobile UX)
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("active");
+        });
+    });
+</script>
+
+
+
+
+   
+    <!--/.header-->
+ <section class="banner" style="padding: 90px 0; background-color: #222;">
+  <div class="container">
+    <div class="row justify-content-start">
+      
+      <!-- Full Left-aligned Column -->
+      <div class="col-md-8">
+        
+        <!-- Heading on Top -->
+        <h2 style="
+          color: #ffffff;
+          font-size: 48px;
+          font-weight: 800;
+          text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.7);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: left;
+        ">
+          K&P Restaurant
+        </h2>
+
+        <!-- Paragraph Below -->
+        <p style="
+          color: #ffffff;
+          font-size: 18px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.8;
+          background-color: rgba(0, 0, 0, 0.586);
+          padding: 20px;
+          border-radius: 50px;
+          text-align: justify;
+          margin-top: 20px;
+        ">
+          A restaurant is a place where people go to eat meals that are prepared and served by staff. Restaurants offer a variety of food and drink options, and they can range from small, casual eateries to large, fine-dining establishments. Customers typically order from a menu and either dine in or take the food to go. Restaurants can specialize in different cuisines such as Italian, Chinese, Indian, or fast food.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+
+
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-item">
+                        <a href="menu.html#ka">
+                        <img src="img/cook_breakfast.png" alt="Breakfast">
+                        <h4>Breakfast</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-item">
+                        <a href="menu.html#lu">
+                        <img src="img/cook_lunch.png" alt="Lunch">
+                        <h4>Lunch</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-item">
+                        <a href="menu.html#di">
+                        <img src="img/cook_dinner.png" alt="Dinner">
+                        <h4>Dinner</h4>
+                        </a>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+
+
+   
+
+
+
+   
+
+
+
+    <section class="featured-food">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>Weekly Featured Food</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <h2>Breakfast</h2>
+                        <img src="img/breakfast_item.jpg" alt="">
+                        <div class="price">Rs.1000</div>
+                        <div class="text-content">
+                            <h4>Snacks</h4>
+                            <p>Light bites perfect for in-between meals—crispy, savory, or sweet treats that satisfy quick cravings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <h2>Lunch</h2>
+                        <img src="img/lunch_item.jpg" alt="">
+                        <div class="price">Rs.1500</div>
+                        <div class="text-content">
+                            <h4>Fride Rice</h4>
+                            <p>A flavorful stir-fried rice dish cooked with vegetables, eggs, and seasonings—often served with meat or sauces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <h2>Dinner</h2>
+                        <img src="img/dinner_item.jpg" alt="">
+                        <div class="price">Rs.900</div>
+                        <div class="text-content">
+                            <h4>Chicken Rice</h4>
+                            <p>Tender chicken served with fragrant rice cooked in broth, often paired with spicy or soy-based sauces for extra taste.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+
+  
+
+
+<!-- Footer Section -->
+<div style="width: 100%; background-color: rgb(4, 11, 70); padding: 40px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; color: white; text-align: center;">
+
+        <!-- Menu -->
+        <div style="flex: 1 1 250px; min-width: 200px;">
+            <h3 style="margin-bottom: 10px;">Menu</h3>
+            <ul style="list-style: none; padding-left: 0; font-size: 14px; line-height: 2;">
+                <li><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+                <li><a href="menu.html" style="color: #ccc; text-decoration: none;">Our Menu</a></li>
+                <li><a href="contact.html" style="color: #ccc; text-decoration: none;">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- About (Centered) -->
+        <div style="flex: 1 1 300px; min-width: 250px;">
+            <h3 style="margin-bottom: 10px;">About</h3>
+            <p style="color: #ccc; font-size: 14px; line-height: 1.6;">
+                A restaurant is a place where people go to enjoy prepared food and drinks. It offers a menu with various dishes and provides a comfortable space for dining with family or friends.
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <div style="flex: 1 1 250px; min-width: 200px;">
+            <h3 style="margin-bottom: 10px;">Contact Us</h3>
+            <ul style="list-style: none; padding-left: 0; font-size: 14px; line-height: 2;">
+                <li>
+                    <a href="#" style="color: #ccc; text-decoration: none;">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span style="padding-left: 8px;">Pallai town, Pallai</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" style="color: #ccc; text-decoration: none;">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span style="padding-left: 8px;">+94 0742358478</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" style="color: #ccc; text-decoration: none;">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span style="padding-left: 8px;">shana@gmail.com</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div style="text-align: center; padding: 20px 0; border-top: 1px solid #555; color: #aaa; font-size: 13px; margin-top: 30px;">
+        &copy; 2025 Restaurant. All rights reserved. Design By WEBbuilders.lk
+    </div>
+</div>
+<!-- footer section end -->
+
+
+
+    
+    
+ 
+ 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>
